@@ -46,4 +46,7 @@ def dag_with_taskflow_api():
 
         return {"total_order_value": total_order_value}
 
+    order_data = extract()
+    order_summary = transform(order_data)
+    
 dag_with_taskflow_api = dag_with_taskflow_api()
