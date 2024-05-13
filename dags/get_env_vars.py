@@ -11,3 +11,4 @@ get_env_vars_operator = PythonOperator(
     task_id='get_env_vars_task',
     python_callable=print_env_vars
 )
+get_env_vars_operator
