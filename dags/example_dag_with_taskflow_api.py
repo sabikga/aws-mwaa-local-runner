@@ -45,3 +45,5 @@ def dag_with_taskflow_api():
             total_order_value += value
 
         return {"total_order_value": total_order_value}
+
+dag_with_taskflow_api = dag_with_taskflow_api()
