@@ -45,16 +45,3 @@ def dag_with_taskflow_api():
             total_order_value += value
 
         return {"total_order_value": total_order_value}
-    @task()
-    def load(total_order_value: float):
-        """
-        #### Load task
-        A simple Load task which takes in the result of the Transform task and
-        instead of saving it to end user review, just prints it out.
-        """
-
-        print("Total order value is: %.2f" % total_order_value)
-    order_data = extract()
-    order_summary = transform(order_data)
-    load(order_summary["total_order_value"])
-dag_with_taskflow_api = dag_with_taskflow_api()
