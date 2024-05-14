@@ -13,5 +13,5 @@ def test_dag_with_taskflow_api_2():
         '''this function prints hello'''
         print('hello')
     t1 = print_hello()
-test_dag_with_taskflow_api = test_dag_with_taskflow_api_2()
+test_dag_with_taskflow_api_2 = test_dag_with_taskflow_api_2()
 
